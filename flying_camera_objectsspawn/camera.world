@@ -1,0 +1,15 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+
+    <!-- the World via plugin -->
+    <plugin name="camera_world_objects" filename="libcamera_world_objects.so">
+        <focus_objects>ragdoll dumpster wooden_case box fake</focus_objects>
+        <surroundings>Surroundingwalls</surroundings>
+        <camera>distorted_camera_k</camera>
+	<savingLocation>/esat/quaoar/kkelchte/simulation/data</savingLocation>
+    </plugin>
+    
+  
+  </world>
+</sdf>

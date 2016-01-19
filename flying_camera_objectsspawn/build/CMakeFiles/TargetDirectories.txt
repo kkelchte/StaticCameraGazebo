@@ -1,0 +1,3 @@
+/users/visics/kkelchte/Gazebo/flying_camera_objectsspawn/build/CMakeFiles/camera_world_objects.dir
+/users/visics/kkelchte/Gazebo/flying_camera_objectsspawn/build/CMakeFiles/camera_gt.dir
+/users/visics/kkelchte/Gazebo/flying_camera_objectsspawn/build/CMakeFiles/camera_move.dir
