@@ -1,3 +1,0 @@
-/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/factory.dir
-/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/model_push.dir
-/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/hello_world.dir

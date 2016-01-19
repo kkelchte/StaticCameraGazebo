@@ -1,4 +1,0 @@
-/users/visics/kkelchte/Gazebo/flying_camera/build/CMakeFiles/camera_gt.dir
-/users/visics/kkelchte/Gazebo/flying_camera/build/CMakeFiles/camera_move.dir
-/users/visics/kkelchte/Gazebo/flying_camera/build/CMakeFiles/camera_world.dir
-/users/visics/kkelchte/Gazebo/flying_camera/build/CMakeFiles/camera_dump.dir

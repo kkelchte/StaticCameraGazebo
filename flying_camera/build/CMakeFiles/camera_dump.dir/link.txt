@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -std=c++11  -shared -Wl,-soname,libcamera_dump.so -o libcamera_dump.so CMakeFiles/camera_dump.dir/camera_dump.cc.o  -L/usr/lib64/gazebo-5.1/plugins -lCameraPlugin -Wl,-rpath,/usr/lib64/gazebo-5.1/plugins 

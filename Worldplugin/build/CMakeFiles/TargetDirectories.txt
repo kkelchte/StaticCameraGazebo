@@ -1,0 +1,2 @@
+/users/visics/kkelchte/Gazebo/Worldplugin/build/CMakeFiles/camera_world_turningobjects.dir
+/users/visics/kkelchte/Gazebo/Worldplugin/build/CMakeFiles/camera_world_spawningobjects.dir
