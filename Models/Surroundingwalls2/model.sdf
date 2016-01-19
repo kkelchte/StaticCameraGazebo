@@ -1,0 +1,689 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='Surroundingwalls2'>
+    <pose>0.493352 -0.530877 0 0 -0 0</pose>
+    <link name='Wall_4'>
+      <pose>-11.55 4.875 0 0 -0 1.5708</pose>
+      <visual name='Wall_4_Visual_0'>
+        <pose>-1.89621 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>5.70757 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_4_Collision_0'>
+        <geometry>
+          <box>
+            <size>5.70757 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>-1.89621 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_4_Visual_1'>
+        <pose>3.30378 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>2.89243 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_4_Collision_1'>
+        <geometry>
+          <box>
+            <size>2.89243 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>3.30378 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_4_Visual_2'>
+        <pose>1.40757 0 2.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_4_Collision_2'>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>1.40757 0 2.25 0 -0 0</pose>
+      </collision>
+    </link>
+    <link name='Wall_5'>
+      <pose>0 9.55 0 0 -0 0</pose>
+      <visual name='Wall_5_Visual_0'>
+        <pose>-10.3409 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>2.56815 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_0'>
+        <geometry>
+          <box>
+            <size>2.56815 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>-10.3409 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_1'>
+        <pose>-7.07441 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>2.16487 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_1'>
+        <geometry>
+          <box>
+            <size>2.16487 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>-7.07441 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_2'>
+        <pose>9.01513 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_2'>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>9.01513 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_3'>
+        <pose>0.597267 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>13.1785 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_3'>
+        <geometry>
+          <box>
+            <size>13.1785 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>0.597267 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_4'>
+        <pose>10.7844 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.68126 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_4'>
+        <geometry>
+          <box>
+            <size>1.68126 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>10.7844 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_5'>
+        <pose>-4.23837 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.90723 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_5'>
+        <geometry>
+          <box>
+            <size>1.90723 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>-4.23837 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_6'>
+        <pose>-1.5619 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8457 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_6'>
+        <geometry>
+          <box>
+            <size>1.8457 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>-1.5619 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_7'>
+        <pose>0.929975 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.53806 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_7'>
+        <geometry>
+          <box>
+            <size>1.53806 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>0.929975 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_8'>
+        <pose>3.51415 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>2.03028 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_8'>
+        <geometry>
+          <box>
+            <size>2.03028 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>3.51415 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_9'>
+        <pose>6.2579 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_9'>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>6.2579 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_10'>
+        <pose>6.2579 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_10'>
+        <geometry>
+          <box>
+            <size>1.85723 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>6.2579 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_11'>
+        <pose>11.1844 0 1.5 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.88126 0.15 2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_11'>
+        <geometry>
+          <box>
+            <size>0.88126 0.15 2</size>
+          </box>
+        </geometry>
+        <pose>11.1844 0 1.5 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_12'>
+        <pose>-5.59198 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_12'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>-5.59198 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_13'>
+        <pose>10.3437 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_13'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>10.3437 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_14'>
+        <pose>-2.88475 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_14'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>-2.88475 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_15'>
+        <pose>-0.239055 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_15'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>-0.239055 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_16'>
+        <pose>2.099 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_16'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>2.099 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_17'>
+        <pose>4.92929 0 1.9 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_17'>
+        <geometry>
+          <box>
+            <size>0.8 0.15 1.2</size>
+          </box>
+        </geometry>
+        <pose>4.92929 0 1.9 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_18'>
+        <pose>-8.60685 0 2.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_18'>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>-8.60685 0 2.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_19'>
+        <pose>7.63651 0 2.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_19'>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>7.63651 0 2.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_5_Visual_20'>
+        <pose>7.63651 0 2.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.435294 0.796078 0.67451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_5_Collision_20'>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>7.63651 0 2.25 0 -0 0</pose>
+      </collision>
+    </link>
+    <link name='Wall_6'>
+      <collision name='Wall_6_Collision'>
+        <geometry>
+          <box>
+            <size>19.25 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>0 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_6_Visual'>
+        <pose>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>19.25 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.996078 0.47451 0.0196078 1</ambient>
+        </material>
+      </visual>
+      <pose>11.55 0 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Wall_7'>
+      <collision name='Wall_7_Collision'>
+        <geometry>
+          <box>
+            <size>23.25 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>0 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_7_Visual'>
+        <pose>0 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>23.25 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 0.764706 0.305882 1</ambient>
+        </material>
+      </visual>
+      <pose>0 -9.55 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_8'>
+      <pose>-11.55 -4.675 0 0 -0 1.5708</pose>
+      <visual name='Wall_8_Visual_0'>
+        <pose>-2.23574 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>5.42853 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_8_Collision_0'>
+        <geometry>
+          <box>
+            <size>5.42853 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>-2.23574 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_8_Visual_1'>
+        <pose>3.16426 0 1.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>3.57147 0.15 2.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_8_Collision_1'>
+        <geometry>
+          <box>
+            <size>3.57147 0.15 2.5</size>
+          </box>
+        </geometry>
+        <pose>3.16426 0 1.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_8_Visual_2'>
+        <pose>0.928527 0 2.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>0.760784 0.662745 0.627451 1</ambient>
+        </material>
+      </visual>
+      <collision name='Wall_8_Collision_2'>
+        <geometry>
+          <box>
+            <size>0.9 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>0.928527 0 2.25 0 -0 0</pose>
+      </collision>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>

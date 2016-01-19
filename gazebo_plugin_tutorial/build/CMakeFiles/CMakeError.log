@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_4efca/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4efca.dir/build.make CMakeFiles/cmTC_4efca.dir/build
+gmake[1]: Entering directory '/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4efca.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4efca.dir/CheckSymbolExists.c.o   -c /users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4efca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4efca.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4efca.dir/CheckSymbolExists.c.o  -o cmTC_4efca -rdynamic 
+CMakeFiles/cmTC_4efca.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4efca.dir/build.make:97: recipe for target 'cmTC_4efca' failed
+gmake[1]: *** [cmTC_4efca] Error 1
+gmake[1]: Leaving directory '/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4efca/fast' failed
+gmake: *** [cmTC_4efca/fast] Error 2
+
+File /users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_530a4/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_530a4.dir/build.make CMakeFiles/cmTC_530a4.dir/build
+gmake[1]: Entering directory '/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_530a4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_530a4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_530a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_530a4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_530a4.dir/CheckFunctionExists.c.o  -o cmTC_530a4 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_530a4.dir/build.make:97: recipe for target 'cmTC_530a4' failed
+gmake[1]: *** [cmTC_530a4] Error 1
+gmake[1]: Leaving directory '/users/visics/kkelchte/Gazebo/gazebo_plugin_tutorial/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_530a4/fast' failed
+gmake: *** [cmTC_530a4/fast] Error 2
+
+
