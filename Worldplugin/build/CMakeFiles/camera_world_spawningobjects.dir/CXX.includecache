@@ -13,6 +13,10 @@ gazebo/common/common.hh
 /users/visics/kkelchte/Gazebo/Worldplugin/gazebo/common/common.hh
 gazebo/gazebo.hh
 /users/visics/kkelchte/Gazebo/Worldplugin/gazebo/gazebo.hh
+iostream
+-
+boost/filesystem.hpp
+-
 sensors/sensors.hh
 -
 

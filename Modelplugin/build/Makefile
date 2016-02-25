@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /users/visics/kkelchte/Gazebo/Plugin
+CMAKE_SOURCE_DIR = /users/visics/kkelchte/Gazebo/Modelplugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /users/visics/kkelchte/Gazebo/Plugin/build
+CMAKE_BINARY_DIR = /users/visics/kkelchte/Gazebo/Modelplugin/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /users/visics/kkelchte/Gazebo/Plugin/build/CMakeFiles /users/visics/kkelchte/Gazebo/Plugin/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/visics/kkelchte/Gazebo/Modelplugin/build/CMakeFiles /users/visics/kkelchte/Gazebo/Modelplugin/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /users/visics/kkelchte/Gazebo/Plugin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/visics/kkelchte/Gazebo/Modelplugin/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,45 @@ camera_move: cmake_check_build_system
 camera_move/fast:
 	$(MAKE) -f CMakeFiles/camera_move.dir/build.make CMakeFiles/camera_move.dir/build
 .PHONY : camera_move/fast
+
+#=============================================================================
+# Target rules for targets named camera_move_stoch
+
+# Build rule for target.
+camera_move_stoch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_move_stoch
+.PHONY : camera_move_stoch
+
+# fast build rule for target.
+camera_move_stoch/fast:
+	$(MAKE) -f CMakeFiles/camera_move_stoch.dir/build.make CMakeFiles/camera_move_stoch.dir/build
+.PHONY : camera_move_stoch/fast
+
+#=============================================================================
+# Target rules for targets named camera_move_stoch_adapt
+
+# Build rule for target.
+camera_move_stoch_adapt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_move_stoch_adapt
+.PHONY : camera_move_stoch_adapt
+
+# fast build rule for target.
+camera_move_stoch_adapt/fast:
+	$(MAKE) -f CMakeFiles/camera_move_stoch_adapt.dir/build.make CMakeFiles/camera_move_stoch_adapt.dir/build
+.PHONY : camera_move_stoch_adapt/fast
+
+#=============================================================================
+# Target rules for targets named camera_move_test
+
+# Build rule for target.
+camera_move_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_move_test
+.PHONY : camera_move_test
+
+# fast build rule for target.
+camera_move_test/fast:
+	$(MAKE) -f CMakeFiles/camera_move_test.dir/build.make CMakeFiles/camera_move_test.dir/build
+.PHONY : camera_move_test/fast
 
 camera_gt.o: camera_gt.cc.o
 
@@ -190,6 +229,87 @@ camera_move.cc.s:
 	$(MAKE) -f CMakeFiles/camera_move.dir/build.make CMakeFiles/camera_move.dir/camera_move.cc.s
 .PHONY : camera_move.cc.s
 
+camera_move_stoch.o: camera_move_stoch.cc.o
+
+.PHONY : camera_move_stoch.o
+
+# target to build an object file
+camera_move_stoch.cc.o:
+	$(MAKE) -f CMakeFiles/camera_move_stoch.dir/build.make CMakeFiles/camera_move_stoch.dir/camera_move_stoch.cc.o
+.PHONY : camera_move_stoch.cc.o
+
+camera_move_stoch.i: camera_move_stoch.cc.i
+
+.PHONY : camera_move_stoch.i
+
+# target to preprocess a source file
+camera_move_stoch.cc.i:
+	$(MAKE) -f CMakeFiles/camera_move_stoch.dir/build.make CMakeFiles/camera_move_stoch.dir/camera_move_stoch.cc.i
+.PHONY : camera_move_stoch.cc.i
+
+camera_move_stoch.s: camera_move_stoch.cc.s
+
+.PHONY : camera_move_stoch.s
+
+# target to generate assembly for a file
+camera_move_stoch.cc.s:
+	$(MAKE) -f CMakeFiles/camera_move_stoch.dir/build.make CMakeFiles/camera_move_stoch.dir/camera_move_stoch.cc.s
+.PHONY : camera_move_stoch.cc.s
+
+camera_move_stoch_adapt.o: camera_move_stoch_adapt.cc.o
+
+.PHONY : camera_move_stoch_adapt.o
+
+# target to build an object file
+camera_move_stoch_adapt.cc.o:
+	$(MAKE) -f CMakeFiles/camera_move_stoch_adapt.dir/build.make CMakeFiles/camera_move_stoch_adapt.dir/camera_move_stoch_adapt.cc.o
+.PHONY : camera_move_stoch_adapt.cc.o
+
+camera_move_stoch_adapt.i: camera_move_stoch_adapt.cc.i
+
+.PHONY : camera_move_stoch_adapt.i
+
+# target to preprocess a source file
+camera_move_stoch_adapt.cc.i:
+	$(MAKE) -f CMakeFiles/camera_move_stoch_adapt.dir/build.make CMakeFiles/camera_move_stoch_adapt.dir/camera_move_stoch_adapt.cc.i
+.PHONY : camera_move_stoch_adapt.cc.i
+
+camera_move_stoch_adapt.s: camera_move_stoch_adapt.cc.s
+
+.PHONY : camera_move_stoch_adapt.s
+
+# target to generate assembly for a file
+camera_move_stoch_adapt.cc.s:
+	$(MAKE) -f CMakeFiles/camera_move_stoch_adapt.dir/build.make CMakeFiles/camera_move_stoch_adapt.dir/camera_move_stoch_adapt.cc.s
+.PHONY : camera_move_stoch_adapt.cc.s
+
+camera_move_test.o: camera_move_test.cc.o
+
+.PHONY : camera_move_test.o
+
+# target to build an object file
+camera_move_test.cc.o:
+	$(MAKE) -f CMakeFiles/camera_move_test.dir/build.make CMakeFiles/camera_move_test.dir/camera_move_test.cc.o
+.PHONY : camera_move_test.cc.o
+
+camera_move_test.i: camera_move_test.cc.i
+
+.PHONY : camera_move_test.i
+
+# target to preprocess a source file
+camera_move_test.cc.i:
+	$(MAKE) -f CMakeFiles/camera_move_test.dir/build.make CMakeFiles/camera_move_test.dir/camera_move_test.cc.i
+.PHONY : camera_move_test.cc.i
+
+camera_move_test.s: camera_move_test.cc.s
+
+.PHONY : camera_move_test.s
+
+# target to generate assembly for a file
+camera_move_test.cc.s:
+	$(MAKE) -f CMakeFiles/camera_move_test.dir/build.make CMakeFiles/camera_move_test.dir/camera_move_test.cc.s
+.PHONY : camera_move_test.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,15 +317,27 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... camera_gt"
-	@echo "... rebuild_cache"
+	@echo "... camera_move_test"
 	@echo "... camera_move"
+	@echo "... camera_move_stoch"
+	@echo "... rebuild_cache"
+	@echo "... camera_move_stoch_adapt"
+	@echo "... camera_gt"
 	@echo "... camera_gt.o"
 	@echo "... camera_gt.i"
 	@echo "... camera_gt.s"
 	@echo "... camera_move.o"
 	@echo "... camera_move.i"
 	@echo "... camera_move.s"
+	@echo "... camera_move_stoch.o"
+	@echo "... camera_move_stoch.i"
+	@echo "... camera_move_stoch.s"
+	@echo "... camera_move_stoch_adapt.o"
+	@echo "... camera_move_stoch_adapt.i"
+	@echo "... camera_move_stoch_adapt.s"
+	@echo "... camera_move_test.o"
+	@echo "... camera_move_test.i"
+	@echo "... camera_move_test.s"
 .PHONY : help
 
 

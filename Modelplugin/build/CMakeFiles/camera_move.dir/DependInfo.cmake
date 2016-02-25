@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/users/visics/kkelchte/Gazebo/Plugin/camera_move.cc" "/users/visics/kkelchte/Gazebo/Plugin/build/CMakeFiles/camera_move.dir/camera_move.cc.o"
+  "/users/visics/kkelchte/Gazebo/Modelplugin/camera_move.cc" "/users/visics/kkelchte/Gazebo/Modelplugin/build/CMakeFiles/camera_move.dir/camera_move.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

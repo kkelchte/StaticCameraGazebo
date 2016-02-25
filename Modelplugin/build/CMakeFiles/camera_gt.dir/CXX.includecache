@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/users/visics/kkelchte/Gazebo/Plugin/camera_gt.cc
+/users/visics/kkelchte/Gazebo/Modelplugin/camera_gt.cc
 gazebo/transport/transport.hh
 -
 gazebo/msgs/msgs.hh
@@ -15,8 +15,10 @@ gazebo/gazebo.hh
 -
 iostream
 -
+boost/filesystem.hpp
+-
 plugins/CameraPlugin.hh
-/users/visics/kkelchte/Gazebo/Plugin/plugins/CameraPlugin.hh
+/users/visics/kkelchte/Gazebo/Modelplugin/plugins/CameraPlugin.hh
 
 /usr/include/gazebo-5.1/gazebo/Master.hh
 string

@@ -19,6 +19,7 @@
 #include <gazebo/msgs/msgs.hh>
 #include <gazebo/gazebo.hh>
 #include <iostream>
+#include <boost/filesystem.hpp>
 
 //#include "gazebo/physics/physics.hh"
 #include "plugins/CameraPlugin.hh"
@@ -36,6 +37,7 @@ namespace gazebo
         transport::SubscriberPtr locationSub;
         std::string location;
         int saveCount;
+        bool wait;
         bool finished;//If finished =1 dont save
         
 
@@ -45,9 +47,16 @@ namespace gazebo
             state = 0;
             saveCount = 0;
             finished = false;
+            wait = true;
             location = _sdf->Get<std::string>("location");
             maxNumber = _sdf->Get<int>("maxnumberframes");
-            if(location == "") location = "/esat/quaoar/kkelchte/simulation/data/box";
+            if(location == ""){
+                location = "/esat/quaoar/kkelchte/simulation/data/no_location/RGB";
+                boost::filesystem::path dir(location.c_str());
+                if(boost::filesystem::create_directory(dir)) {
+                        gzmsg << "[GT]:Success in creating: "<<location << "\n";
+                }
+            }
             if(maxNumber == 0) maxNumber = 1000;
             std::cout << "Location: "<<location << ". Max number: "<<maxNumber<<std::endl;
             
@@ -62,7 +71,7 @@ namespace gazebo
             finishedSub = node->Subscribe("/gazebo/moving/finished_state", &Camera_gt::callback_finished, this);
             // subscribe with latching so that function is now directly called if there is a value on the topic
             // without that this value has to change
-            locationSub = node->Subscribe("/gazebo/savingLocation", &Camera_gt::callback_location, this,true); 
+            locationSub = node->Subscribe("/gazebo/saving_location", &Camera_gt::callback_location, this,true); 
         }
 
         
@@ -71,13 +80,19 @@ namespace gazebo
         private: void callback_location(ConstGzStringPtr &_msg)
         {
             // Dump the message contents to stdout.
-            std::cout << "[GT:] received location: "<<_msg->data() << std::endl;
-            if(_msg->data()!="")location = _msg->data();
+            gzmsg << "[GT:] received location: "<<_msg->data() << std::endl;
+            if(_msg->data()!=""){
+                location = _msg->data() + "/RGB";
+                boost::filesystem::path dir(location.c_str());
+                if(boost::filesystem::create_directory(dir)) {
+                        gzmsg << "[GT]:Success in creating: "<<location << "\n";
+                }
+            }
         }
         private: void callback_finished(ConstIntPtr &_msg)
         {
             // Dump the message contents to stdout.
-            if(_msg->data()==1) finished=true;
+            if(_msg->data()==1){ finished=true; saveCount = 0;}
             if(_msg->data()==0) finished=false; 
             cout <<"[GT] received finished "<< finished << std::endl;
         }
@@ -94,11 +109,19 @@ namespace gazebo
             unsigned int _width, unsigned int _height, unsigned int _depth,
             const std::string &_format)
         {
-            if(!finished){
+            if(wait){
+                saveCount++;
+                if(saveCount>7){ //the first 7 frames appear to be black even though the simulation waits untill
+                    //everything is nicely loaded. This is strange but these first images are now just skipped.
+                    wait = false;
+                    saveCount =0;
+                }
+            }
+            if(!finished && !wait){
                 char tmp[1024];
                 snprintf(tmp, sizeof(tmp), "%s/%05d-gt%01d.jpg",this->location.c_str(),
                     this->saveCount, this->state);
-
+                
                 if (this->saveCount < maxNumber)
                 {
                     this->parentSensor->GetCamera()->SaveFrame(

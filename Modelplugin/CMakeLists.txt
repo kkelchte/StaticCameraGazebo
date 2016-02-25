@@ -15,6 +15,14 @@ list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 add_library(camera_move SHARED camera_move.cc)
 target_link_libraries(camera_move ${GAZEBO_libraries})
 
+add_library(camera_move_stoch SHARED camera_move_stoch.cc )
+target_link_libraries(camera_move_stoch ${GAZEBO_LIBRARIES})
+
+add_library(camera_move_stoch_adapt SHARED camera_move_stoch_adapt.cc )
+target_link_libraries(camera_move_stoch_adapt ${GAZEBO_LIBRARIES})
+
 add_library(camera_gt SHARED camera_gt.cc )
 target_link_libraries(camera_gt ${GAZEBO_LIBRARIES} CameraPlugin)
 
+add_library(camera_move_test SHARED camera_move_test.cc)
+target_link_libraries(camera_move_test ${GAZEBO_libraries})

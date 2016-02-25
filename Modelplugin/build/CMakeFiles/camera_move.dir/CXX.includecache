@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/users/visics/kkelchte/Gazebo/Plugin/camera_move.cc
+/users/visics/kkelchte/Gazebo/Modelplugin/camera_move.cc
 boost/bind.hpp
 -
 gazebo/gazebo.hh
-/users/visics/kkelchte/Gazebo/Plugin/gazebo/gazebo.hh
+/users/visics/kkelchte/Gazebo/Modelplugin/gazebo/gazebo.hh
 gazebo/physics/physics.hh
-/users/visics/kkelchte/Gazebo/Plugin/gazebo/physics/physics.hh
+/users/visics/kkelchte/Gazebo/Modelplugin/gazebo/physics/physics.hh
 gazebo/common/common.hh
-/users/visics/kkelchte/Gazebo/Plugin/gazebo/common/common.hh
+/users/visics/kkelchte/Gazebo/Modelplugin/gazebo/common/common.hh
 gazebo/msgs/msgs.hh
 -
 

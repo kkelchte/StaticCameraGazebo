@@ -1,0 +1,13 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="default">
+    <!-- the World via plugin -->
+    <plugin name="camera_world_spawningobjects" filename="libcamera_world_spawningobjects.so">
+        <focus_objects>polaris_ranger_ev cafe_table</focus_objects>
+        <size_of_objects>3.0 3.0 2.5;1.0 1.0 1.0</size_of_objects>
+        <surroundings>SurroundingwallsBlue</surroundings>
+        <camera>distorted_camera_test</camera>
+	<savingLocation>/esat/qayd/kkelchte/simulation/testset</savingLocation>
+    </plugin>
+  </world>
+</sdf>

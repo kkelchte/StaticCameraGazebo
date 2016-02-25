@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++11  -shared -Wl,-soname,libcamera_move_test.so -o libcamera_move_test.so CMakeFiles/camera_move_test.dir/camera_move_test.cc.o  -L/usr/lib64/gazebo-5.1/plugins 
